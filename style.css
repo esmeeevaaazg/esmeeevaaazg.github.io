@@ -13,3 +13,68 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+header p {
+    margin: 5px 0;
+    color: #777;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    color: #4CAF50;
+}
+
+.job, .education {
+    margin: 15px 0;
+}
+
+.job h3, .education h3 {
+    margin: 0;
+    color: #333;
+}
+
+.job p, .education p {
+    margin: 5px 0;
+    color: #777;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.skills li {
+    background: #4CAF50;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.8em;
+}
