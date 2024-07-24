@@ -1,22 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Currículum Vitae</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="cv-container">
-            <header>    
-                <img src="https://www.shareicon.net/data/512x512/2017/05/30/886556_user_512x512.png" alt="">
-                <h1>Esmeralda Vázquez García</h1>
-                <p>Desarrollador Web</p>
-                <p>Correo: esmeeevaaaazg@upsrj.com | Teléfono: 123-456-7890</p>
-            </header>
-            <footer>
-                <p>&copy; 2024 Esmeralda Vázquez García. Todos los derechos reservados.</p>
-            </footer>
-    
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio" class="section">
+        <div class="container">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <p>Introducción breve y enlaces a las secciones principales.</p>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>Información detallada sobre mi educación, experiencia y habilidades.</p>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto, tecnología utilizada y el impacto del proyecto.</p>
+                <p>Desafíos y soluciones.</p>
+                <a href="https://github.com/usuario/proyecto1" target="_blank">Código Fuente</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto, tecnología utilizada y el impacto del proyecto.</p>
+                <p>Desafíos y soluciones.</p>
+                <a href="https://github.com/usuario/proyecto2" target="_blank">Código Fuente</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Información para contactarme: formulario o enlaces a redes sociales y correos electrónicos.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mi Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
