@@ -1,33 +1,150 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/564x/56/81/22/568122cd9af0dc7d53b7515fdcceb0e1.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center;
 }
 
-.navbar {
-    margin-bottom: 60px;
+#inicio {
+    margin-top: 70px; /* Ajusta este valor según el espacio que desees */
 }
 
-.section {
-    padding: 60px 0;
+header {
+    background-size: cover;
+    background-color: white;
+    color: #000000;
+    text-align: end; /* Cambiado a 'end' para alinear el texto a la derecha */
+    padding: 125px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between; /* Alinea el contenido a los extremos del header */
+    align-items: center; /* Centra verticalmente los elementos del header */
+}
+.logo img {
+    max-width: 420px;
 }
 
 .section h2 {
+    padding-left: 20px; /* Espacio a la izquierda del título */
+    padding-right: 20px; /* Espacio a la derecha del título */
+}
+
+.section h3 {
+    padding-left: 20px; /* Espacio a la izquierda del título */
+    padding-right: 20px; /* Espacio a la derecha del título */
+    /* Otros estilos para el título, como color, fuente, etc. */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido del nav a la derecha */
+    align-items: center; /* Alinea verticalmente los elementos dentro del nav */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Añadido para eliminar el margen predeterminado */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Cambiado a 'margin-left' para espaciar los elementos */
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+p {
+    margin-left: 20px; /* Añade un margen a la izquierda del párrafo para separarlo de la imagen */
+}
+section {
+    padding: 20px;
     margin-bottom: 20px;
 }
 
+.section {
+    padding: 40px 0;
+    margin: 20px auto; /* Espacio alrededor de cada sección */
+    border-radius: 10px; /* Esquinas redondeadas del recuadro */
+    box-shadow: 0px 4px 8px rgba(125, 125, 125, 0.53); /* Sombra para un efecto de elevación */
+    background-color: #e0e0e06c; /* Color de fondo para diferenciar las secciones */
+    max-width: 900px; /* Ancho máximo para el contenido */
+}
+
+.section h2 {
+    margin-bottom: 25px;
+}
+
 .project {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+}
+
+#contacto {
+    margin-bottom: 70px; /* Añade espacio inferior adicional */
+}
+
+img {
+    float: left; /* Hace que la imagen flote hacia la izquierda */
+    margin-right: 20px; /* Añade un margen a la derecha de la imagen para separarla del párrafo */
+    width: 600px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.Carrusel {
+    width: 900px;
+    height:auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.Carrusel ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.Carrusel li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.Carrusel img{
+    width: 100%;
 }
 
 .footer {
-    background-color: #f8f9fa;
+    background-color: #80a58a;
     padding: 20px 0;
     text-align: center;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
 
+@keyframes slide {
+    0% {margin-left: 0% ;}
+    20% {margin-left: 0% ;}
+
+    25% {margin-left: -100% ;}
+    45% {margin-left: -100% ;}
+
+    50% {margin-left: -200% ;}
+    70% {margin-left: -200% ;}
+
+    75% {margin-left: -300% ;}
+    100% {margin-left: -300% ;}
+}
+
 @media (max-width: 768px) {
+    .Carrusel{
+        width: 100%;
+    }
     .section {
         padding: 30px 0;
     }
